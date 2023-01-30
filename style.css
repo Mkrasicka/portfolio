@@ -24,6 +24,12 @@ section {
   position: relative;
 }
 
+.section1 {
+  width: 900px;
+  border-radius: 20px;
+  border: 2px solid #ffdda0;
+}
+
 .section4 {
   min-height: 70vh;
   position: relative;
@@ -180,6 +186,9 @@ section p {
   left: 42%;
   margin-bottom: 50px;
   margin-right: 40px;
+  margin-top: 20px;
+  font-size: 40px;
+  font-weight: 300;
 }
 
 .skill {
@@ -212,6 +221,7 @@ h3 {
 
 .aboutme {
   font-size: 30px;
+  text-align: justify;
 }
 a:hover {
   color: pink;
@@ -219,27 +229,25 @@ a:hover {
 }
 .img {
   margin-top: 50px;
-  height: auto;
+  margin-bottom: 50px;
+  margin-right: 50px;
+  height: 200px;
   width: 200px;
   bottom: 0;
   right: 0px;
   border-radius: 50%;
   position: relative;
-  border: 7px solid #bbe2e2;
+  border: 2px solid #bbe2e2;
 }
 
-.section1 {
 
-  border-radius: 20px;
-  border: 10px solid #ffdda0;
-}
 
 .email:hover {
   color: pink;
 }
 
 .section3s {
-  border: 10px solid pink;
+  border: 2px solid pink;
   border-radius: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
