@@ -25,9 +25,9 @@ section {
 }
 
 html {
-  /* scroll-behavior: smooth; */
-  /* transition: all 0.3s;; */
-  /* cursor: none; */
+  scroll-behavior: smooth;
+  transition: all 0.3s;
+  /* /* cursor: none; */
 }
 
 header {
@@ -74,7 +74,7 @@ header div.welcome {
   position: absolute;
   top: 20px;
   right: 0px;
-  animation: slide 60s linear infinite;
+  animation: slide 80s linear infinite;
 }
 
 @keyframes slide {
@@ -125,7 +125,7 @@ header div.welcome {
   position: absolute;
   top: 100px;
   left: -200px;
-  animation: slide-right 50s linear infinite;
+  animation: slide-right 40s linear infinite;
 }
 
 .clouds3 {
