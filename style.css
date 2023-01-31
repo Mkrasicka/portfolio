@@ -7,7 +7,9 @@ body {
   letter-spacing: 0.02em;
   box-sizing: border-box;
   width: 100%;
-  animation: moveIt 10s linear infinite;
+  overflow: hidden;
+  /* overflow-y: hidden; */
+  /* animation: moveIt 10s linear infinite; */
   /* cursor: none; */
   /* background-image: linear-gradient(rgb(255, 255, 255), pink); */
 }
@@ -23,8 +25,8 @@ section {
 }
 
 html {
-  scroll-behavior: smooth;
-  transition: all 0.3s;;
+  /* scroll-behavior: smooth; */
+  /* transition: all 0.3s;; */
   /* cursor: none; */
 }
 
@@ -133,9 +135,7 @@ header div.welcome {
   right: -200px;
   animation: slide-left 40s linear infinite;
 }
-.bigC {
-  z-index: 999;
-}
+
 
 .clouds4 {
   width: 200px;
