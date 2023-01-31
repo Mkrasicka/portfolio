@@ -7,10 +7,25 @@ body {
   letter-spacing: 0.02em;
   box-sizing: border-box;
   width: 100%;
+  animation: moveIt 10s linear infinite;
+  /* cursor: none; */
+  /* background-image: linear-gradient(rgb(255, 255, 255), pink); */
+}
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  scroll-snap-align: start;
 }
 
 html {
   scroll-behavior: smooth;
+  transition: all 0.3s;;
+  /* cursor: none; */
 }
 
 header {
@@ -18,7 +33,14 @@ header {
   min-height: 100vh;
   min-width: 100vw;
   display: flex;
+  background-image: linear-gradient() ;
+  scroll-snap-align: start;
 }
+
+/* .slide-down {
+  transform: translateY(100%);
+  animation: slide-down;
+} */
 
 header div.welcome {
   margin-bottom: 100px;
@@ -33,6 +55,33 @@ header div.welcome {
   position: relative;
   width: 80%;
   margin: auto;
+}
+
+.women {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+
+}
+
+.sun {
+  width: 200px;
+  height: 150px;
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  animation: slide 60s linear infinite;
+}
+
+@keyframes slide {
+  0%{
+    transform: translate3d(0, 0, 0);
+  }
+  100%{
+    transform: translate3d(-1692px, 0, 0);
+  }
 }
 
 header > * {
@@ -50,6 +99,7 @@ header > * {
   padding-left: 0;
   padding-right: 50px;
   margin: auto;
+  background-color: white;
 }
 
 .section2 {
@@ -62,6 +112,7 @@ header > * {
   align-items: center;
   width: 990px;
   margin: auto;
+  background-color: white;
 }
 
 section h3 {
@@ -103,7 +154,10 @@ header h1 {
   padding-top: 20px;
   margin-bottom: 20px;
   font-family: 'Josefin Slab', serif;
+  animation: slides 10s linear infinite;
 }
+
+
 
 header h2 {
   font-size: 50px;
@@ -121,6 +175,7 @@ header .pr {
   padding-right: 10px;
   margin-top: 10px;
   font-family: 'Josefin Slab', serif;
+  font-size: 50px;
 }
 
 header .pr:hover {
@@ -133,6 +188,7 @@ header .sks {
   padding-left: 10px;
   padding-right: 10px;
   font-family: 'Josefin Slab', serif;
+  font-size: 50px;
 }
 
 header .sks:hover {
@@ -149,7 +205,9 @@ header .at {
   padding-left: 10px;
   padding-right: 10px;
   font-family: 'Josefin Slab', serif;
+  font-size: 50px;
 }
+
 
 .first {
   position: relative;
@@ -183,6 +241,7 @@ header .at {
   padding: 30px 50px;
   text-align: center;
   margin: auto;
+  background-color: white;
 }
 
 .section4 {
