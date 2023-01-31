@@ -42,7 +42,17 @@
       <a class="pr scale" href="#projects">PROJECTS</a>
       <a class="sks scale" href="#skills">SKILLS</a>
     </div>
-    <img class="women" src="./images/strong-blond-woman-profile-vector_53876-79993.jpeg" alt="">
+    <div class="hello">
+      <p>Hi!</p>
+    </div>
+  </div>
+    <img class="clouds" src="./images/844780-removebg-preview.png" alt="cloud">
+    <img class="clouds2" src="./images/844780-removebg-preview.png" alt="cloud">
+    <img class="clouds3" src="./images/844780-removebg-preview.png" alt="cloud">
+    <img class="clouds4" src="./images/844780-removebg-preview.png" alt="cloud">
+
+    <img class="women" src="./images/strong-blond-woman-profile-vector_53876-79993-removebg-preview.png" alt="women">
+    <img class="bubble" src="./images/vecteezy_bubbles-speech_1195232.png" alt="chat bubble">
     <div class="scroll-down-about">
     </div>
   </header>
@@ -206,5 +216,77 @@
     </div>
   </footer>
 </div>
+<script>
+  const cursor = () => {
+  let cursor = document.querySelector(".cursor");
+  document.addEventListener("mousemove", (e) => {
+    // let clientX = e.clientX;
+    // let clientY = e.clientY;
+    // cursor.style.transform = `translate(${clientX}px, ${clientY}px)`;
+    cursor.style.top = e.pageY + "px";
+    cursor.style.left = e.pageX + "px";
+  });
+
+  let h1 = document.querySelectorAll("h1");
+  h1.forEach((titre) => {
+    titre.addEventListener("mouseover", (e) => {
+      cursor.classList.add("cursor--bigger");
+    });
+    titre.addEventListener("mouseleave", (e) => {
+      cursor.classList.remove("cursor--bigger");
+    });
+  });
+
+  let clouds = document.querySelectorAll(".cloudBig");
+  let mouseTxt = document.querySelector(".cursor-text");
+  clouds.forEach((cloud) => {
+    cloud.addEventListener("mouseover", (e) => {
+      cursor.classList.add("cursor--bigger");
+      mouseTxt.innerText = "📌";
+    });
+    cloud.addEventListener("mouseleave", (e) => {
+      cursor.classList.remove("cursor--bigger");
+      mouseTxt.innerText = "";
+    });
+  });
+  let cloudHome = document.querySelector(".cloudBigHome");
+  let mouseTxtHome = document.querySelector(".cursor-text");
+
+  cloudHome.addEventListener("mouseover", (e) => {
+    cursor.classList.add("cursor--bigger");
+    mouseTxtHome.innerText = "📌";
+  });
+  cloudHome.addEventListener("mouseleave", (e) => {
+    cursor.classList.remove("cursor--bigger");
+    mouseTxtHome.innerText = "";
+  });
+
+  let link = document.querySelectorAll("a");
+  link.forEach((a) => {
+    a.addEventListener("mouseover", (e) => {
+      cursor.classList.add("cursor--big");
+    });
+    a.addEventListener("mouseleave", (e) => {
+      cursor.classList.remove("cursor--big");
+    });
+  });
+
+  let submit = document.querySelector(".submit").firstElementChild;
+
+  submit.addEventListener("mouseover", (e) => {
+    cursor.classList.add("cursor--big");
+  });
+  submit.addEventListener("mouseleave", (e) => {
+    cursor.classList.remove("cursor--big");
+  });
+
+  // let target = e.target;
+  // target.addEventListener("mouseover", (e) => {
+  //   cursor.classList.add("cursor--big");
+  // });
+};
+
+export { cursor };
+</script>
 </body>
 </html>

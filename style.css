@@ -58,8 +58,8 @@ header div.welcome {
 }
 
 .women {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   position: absolute;
   bottom: 0px;
   right: 0px;
@@ -81,6 +81,76 @@ header div.welcome {
   }
   100%{
     transform: translate3d(-1692px, 0, 0);
+  }
+}
+
+.bubble {
+  width: 150px;
+  position: absolute;
+  bottom: 180px;
+  right: 220px;
+}
+
+.hello {
+  width: 200px;
+  position: absolute;
+  bottom: 210px;
+  right: 120px;
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.clouds {
+  width: 200px;
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  animation: slide-right 60s linear infinite;
+}
+
+@keyframes slide-right {
+  from {
+    margin-left: 0%;
+  }
+  to {
+    margin-left: 100%;
+  }
+}
+
+.clouds2 {
+  width: 200px;
+  position: absolute;
+  top: 100px;
+  left: -200px;
+  animation: slide-right 50s linear infinite;
+}
+
+.clouds3 {
+  width: 200px;
+  position: absolute;
+  top: 75px;
+  right: -200px;
+  animation: slide-left 40s linear infinite;
+}
+.bigC {
+  z-index: 999;
+}
+
+.clouds4 {
+  width: 200px;
+  position: absolute;
+  top: 25px;
+  right: -100px;
+  animation: slide-left 30s linear infinite;
+}
+
+@keyframes slide-left {
+  from {
+    margin-right: 0%;
+  }
+  to {
+    margin-right: 100%;
   }
 }
 
@@ -168,6 +238,7 @@ header h2 {
   padding-top: 20px;
   font-family: 'Josefin Slab', serif;
 }
+
 header .pr {
   color: #a0dfa0;
   text-decoration: none;
@@ -461,4 +532,42 @@ border: none;
 
 .back-face {
   font-size: 20px;
+}
+
+
+/* cloud wrapper */
+
+.clouds-wrapper {
+  position: relative;
+  transform: translateY(70%);
+  z-index: 10;
+}
+
+.drifting_clouds_right {
+  /* animation: driftRightFast 70s infinite forwards; */
+  position: relative;
+  width: fit-content;
+  z-index: 10;
+}
+.drifting_clouds_left {
+  /* animation: driftLeftFast 80s infinite forwards; */
+  position: relative;
+  width: fit-content;
+
+  z-index: 10;
+}
+
+.drifting_clouds_right_slow {
+  /* animation: driftRightSlow 100s infinite forwards; */
+
+  position: relative;
+  width: fit-content;
+  z-index: 10;
+}
+.drifting_clouds_left_slow {
+  /* animation: driftLeftSlow 100s infinite forwards; */
+
+  position: relative;
+  width: fit-content;
+  z-index: 10;
 }
