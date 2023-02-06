@@ -38,9 +38,11 @@
         <!-- col-lg-12 mx-auto -->
       <h1 class="slide-down">Magdalena Krasicka</h1>
       <h2>Full Stack Developer</h2>
-      <a class="at scale" href="#about">ABOUT</a>
-      <a class="pr scale" href="#projects">PROJECTS</a>
-      <a class="sks scale" href="#skills">SKILLS</a>
+      <div class="topics">
+        <a class="at scale topic topic1" href="#about">ABOUT</a>
+        <a class="pr scale topic topic2" href="#projects">PROJECTS</a>
+        <a class="sks scale topic topic3" href="#skills">SKILLS</a>
+      </div>
     </div>
     <div class="hello">
       <p>Hi!</p>
@@ -215,6 +217,21 @@
     </div>
   </footer>
 </div>
+<script>
+ const topics = document.querySelectorAll('.topic');
+
+ function toggleOpen() {
+    this.classList.toggle('open');
+ }
+
+ function toggleRemove() {
+    this.classList.remove('open');
+ }
+ topics.forEach(topic => topic.addEventListener('mouseover', toggleOpen));
+ topics.forEach(topic => topic.addEventListener('mouseout', toggleRemove));
+
+
+</script>
 <!-- <script>
   const cursor = () => {
   let cursor = document.querySelector(".cursor");
