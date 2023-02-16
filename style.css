@@ -191,13 +191,13 @@ header > * {
 .section1 {
   position: relative;
   min-height: 70vh;
-  width: 990px;
+  width: 80%;
   border-radius: 20px;
   border: 2px solid #ffdda0;
   display: flex;
   align-items: center;
   padding-left: 0;
-  padding-right: 50px;
+  padding-right: 10%;
   margin: auto;
   background-color: white;
 }
@@ -715,4 +715,206 @@ border: none;
   position: relative;
   width: fit-content;
   z-index: 10;
+}
+
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+
+  header h1 {
+    font-size: 80px;
+  }
+  .sun {
+    width: auto;
+  }
+  .clouds {
+    width: 200px;
+  }
+  .topics {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  .topic1 {
+    margin-bottom: 20px;
+  }
+  .topic2 {
+    margin-bottom: 20px;
+  }
+  .topic3 {
+    margin-top: 10px;
+  }
+  .women {
+    height: 40%;
+    width: auto;
+    right: -10%;
+  }
+
+  .bubble {
+    width: 12%;
+    position: absolute;
+    bottom: 28%;
+    right: 21%;
+}
+.hello {
+  bottom: 28%;
+  right: 16%;
+}
+.clouds2 {
+  width: 27%;
+}
+.section1 {
+  flex-direction: column;
+  width: 100%;
+}
+.section2 {
+  width: 100%;
+}
+h2 {
+  font-size: 30px;
+  padding-left: 35px;
+}
+
+.img {
+  height: 50%;
+  width: 50%;
+}
+
+.section3s p {
+  font-size: 20px;
+
+}
+.section3s {
+  padding: 0;
+  margin-bottom: 20px;
+  width: 100%;
+  padding-top: 20px;
+}
+
+header h2 {
+  padding: 0;
+
+}
+.she {
+  width: 80%;
+}
+.imghair {
+  display: grid;
+  /* flex-direction:column-reverse; */
+  justify-content: space-around;
+  width: 50%;
+
+
+  /* padding-left: 30px; */
+
+}
+.imghair1 {
+  margin-bottom: 20px;
+}
+
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 100%;
+  }
+  .section1 {
+    flex-direction: column;
+    width: 100%;
+  }
+  .section2 {
+    width: 100%;
+  }
+  h2 {
+    font-size: 20px;
+    padding-left: 20px;
+  }
+  header h1 {
+    font-size: 50px;
+  }
+  .topics {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  .topic1 {
+    margin-bottom: 20px;
+  }
+  .topic2 {
+    margin-bottom: 20px;
+  }
+  .topic3 {
+    margin-top: 10px;
+  }
+  .women {
+    height: 15%;
+  }
+
+  .bubble {
+    width: 15%;
+    position: absolute;
+    bottom: 10%;
+    right: 15%;
+}
+.sun {
+  width: 40%;
+  height: 16%;
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  animation: slide 80s linear infinite;
+}
+.hello {
+  width: 14%;
+  bottom: 10%;
+  right: 13%;
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.clouds {
+  width: 30%;
+}
+.img {
+  height: 50%;
+  width: 50%;
+}
+.section3s p {
+  font-size: 10px;
+
+}
+.section3s {
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+header h2 {
+  padding: 0;
+
+}
+.she {
+  width: 80%;
+}
+.imghair {
+  display: grid;
+  /* flex-direction:column-reverse; */
+  justify-content: space-around;
+  width: 50%;
+
+
+  /* padding-left: 30px; */
+
+}
+.imghair1 {
+  margin-bottom: 20px;
+}
 }
