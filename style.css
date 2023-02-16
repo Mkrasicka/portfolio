@@ -1,5 +1,5 @@
 body {
-  font-family: 'Josefin Slab', serif;;
+  font-family: 'Josefin Slab', serif;
   -webkit-font-smoothing: antialiased;
   font-size: 13px;
   color: #ffffff;
@@ -13,6 +13,17 @@ body {
   /* cursor: none; */
   /* background-image: linear-gradient(rgb(255, 255, 255), pink); */
 }
+
+.background-text {
+  font-family: 'Josefin Slab', serif;
+  font-size: 300px;
+  letter-spacing: 20px;
+  color: transparent;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
 .wrapper {
   width: 100%;
   height: 100vh;
@@ -32,7 +43,6 @@ body {
 
 .topic.open {
   font-size: 70px;
-
 }
 
 .topics > * {
@@ -53,7 +63,7 @@ html {
 header {
   position: relative;
   min-height: 100vh;
-  min-width: 100vw;
+  min-width: 100%;
   display: flex;
   background-image: linear-gradient() ;
   scroll-snap-align: start;
@@ -80,8 +90,8 @@ header div.welcome {
 }
 
 .women {
-  width: 300px;
-  height: 300px;
+  width: 22%;
+  height: 38%;
   position: absolute;
   bottom: 0px;
   right: 0px;
@@ -89,8 +99,8 @@ header div.welcome {
 }
 
 .sun {
-  width: 200px;
-  height: 150px;
+  width: 15%;
+  height: 20%;
   position: absolute;
   top: 20px;
   right: 0px;
@@ -107,14 +117,14 @@ header div.welcome {
 }
 
 .bubble {
-  width: 150px;
+  width: 10%;
   position: absolute;
   bottom: 180px;
   right: 220px;
 }
 
 .hello {
-  width: 200px;
+  width: 14%;
   position: absolute;
   bottom: 210px;
   right: 120px;
@@ -124,7 +134,7 @@ header div.welcome {
 }
 
 .clouds {
-  width: 200px;
+  width: 10%;
   position: absolute;
   top: 50px;
   left: 0px;
@@ -141,7 +151,7 @@ header div.welcome {
 }
 
 .clouds2 {
-  width: 200px;
+  width: 15%;
   position: absolute;
   top: 100px;
   left: -200px;
@@ -149,7 +159,7 @@ header div.welcome {
 }
 
 .clouds3 {
-  width: 200px;
+  width: 15%;
   position: absolute;
   top: 75px;
   right: -200px;
@@ -158,7 +168,7 @@ header div.welcome {
 
 
 .clouds4 {
-  width: 200px;
+  width: 18%;
   position: absolute;
   top: 25px;
   right: -100px;
@@ -200,7 +210,7 @@ header > * {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 990px;
+  width: 80%;
   margin: auto;
   background-color: white;
 }
@@ -224,8 +234,8 @@ section p {
 }
 
 .img {
-  height: 250px;
-  width: 250px;
+  height: 25%;
+  width: 25%;
   margin: 50px;
   border-radius: 50%;
   border: 2px solid #bbe2e2;
@@ -233,7 +243,52 @@ section p {
 
 .aboutme {
   text-align: justify;
+  /* opacity: 1;
+  transition: opacity 3s; */
+
+  /* transition: transform 0.5s; */
 }
+
+/* .slideUp {
+  animation-duration: 1.1s;
+  animation-name: slideUP;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+} */
+
+/* @keyframes slideUp {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+} */
+
+.slideUp {
+  animation-name: slideUp;
+  animation-name: slideUp;
+  animation-duration: 1s;
+  animation-duration: 1s;
+  visibility: visible;
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+
+/* @keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+} */
 
 header h1 {
   margin-top: 20px;
@@ -299,11 +354,66 @@ header .at {
   /* font-size: 50px; */
 }
 
+.second {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
 
 .first {
   position: relative;
   display: flex;
   justify-content: center;
+  margin-top: 10%;
+  -webkit-animation: mover 1s infinite  alternate;
+  animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+
+/* @-webkit-keyframes bounceInDown {
+  0% {
+     opacity: 0;
+     -webkit-transform: translateY(-2000px);
+  }
+  60% {
+     opacity: 1;
+     -webkit-transform: translateY(30px);
+  }
+  80% {
+     -webkit-transform: translateY(-10px);
+  }
+  100% {
+     -webkit-transform: translateY(0);
+  }
+}
+
+@keyframes bounceInDown {
+  0% {
+     opacity: 0;
+     transform: translateY(-2000px);
+  }
+  60% {
+     opacity: 1;
+     transform: translateY(30px);
+  }
+  80% {
+     transform: translateY(-10px);
+  }
+  100% {
+     transform: translateY(0);
+  }
+} */
+
+.bounceInDown {
+  -webkit-animation-name: bounceInDown;
+  animation-name: bounceInDown;
 }
 
 .container {
@@ -315,7 +425,7 @@ header .at {
 }
 
 .img-carousel {
-  width: 890px;
+  width: 100%;
   border-radius: 20px;
 }
 
@@ -328,7 +438,7 @@ header .at {
   border-radius: 20px;
   position: relative;
   display: flex;
-  width: 990px;
+  width: 70%;
   padding: 30px 50px;
   text-align: center;
   margin: auto;
@@ -380,7 +490,7 @@ header .at {
   position: relative;
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 3%;
 }
 
 .scale {
@@ -407,10 +517,25 @@ header .cn {
   height: auto;
   bottom: 0;
   right: 0px;
-  margin-left: 10px;
+  margin-left: 2%;
   border: 2px solid #bbe2e2;
   border-radius: 20px;
+  transition: 0.6s ease;
+
+
 }
+
+.she:hover {
+  transform: translate(5%,5%) scale(1.15);
+  transition: 0.6s ease;
+  /* transform: translate(0%, 0%);
+  width: 300px;
+  transition: 0.6s ease; */
+}
+
+/* .she.open {
+  width: 3000px;
+} */
 
 h2 {
   color: #323131;

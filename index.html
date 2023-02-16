@@ -29,6 +29,7 @@
 
 <body>
   <div class="wrapper">
+    <div class="background-text">HELLO</div>
   <!-- <span class="cursor">
     <span class="cursor-text"></span>
   </span> -->
@@ -62,12 +63,12 @@
 
 
   <section id="about">
-    <h3 class="first">About me</h3>
+    <h3 class="first" data-anchor="about">About me</h3>
     <div class="container">
       <div class="section1">
     <!-- col-lg-12 mx-auto -->
         <img class="img" src="https://avatars.githubusercontent.com/u/107586977?v=4" alt="photo Magdalena Krasicka">
-        <h2 class="aboutme">After graduating with a Masters degree in Business & Management, for the last 8 years, I have enjoyed working in creative industries
+        <h2 class="aboutme " id="myImg">After graduating with a Masters degree in Business & Management, for the last 8 years, I have enjoyed working in creative industries
           and customer facing environments; such as telecommunications and beauty. Recently graduated from an extensive Web Developer bootcamp at the Le Wagon
           where I fell in love with coding.</h2>
       </div>
@@ -194,7 +195,7 @@
   <hr class="line">
 
   <section class="container">
-    <h2 class="first">I'm also a passionate colorist. You can view my instagram profile by clicking <a class="here" href="https://www.instagram.com/magdalenakrasickahair/"> here.</a></h2>
+    <h2 class="second">I'm also a passionate colorist. You can view my instagram profile by clicking <a class="here" href="https://www.instagram.com/magdalenakrasickahair/"> here.</a></h2>
     <!-- col-lg-12 mx-auto -->
     <div class="section4">
       <div class="d-flex justify-content-center">
@@ -218,7 +219,8 @@
   </footer>
 </div>
 <script>
- const topics = document.querySelectorAll('.topic');
+
+const topics = document.querySelectorAll('.topic');
 
  function toggleOpen() {
     this.classList.toggle('open');
@@ -230,79 +232,15 @@
  topics.forEach(topic => topic.addEventListener('mouseover', toggleOpen));
  topics.forEach(topic => topic.addEventListener('mouseout', toggleRemove));
 
+ window.onscroll = function() {myFunction()};
 
+function myFunction() {
+  if (document.documentElement.scrollTop > 350) {
+    document.getElementById("myImg").className = "slideUp";
+  }
+}
 </script>
-<!-- <script>
-  const cursor = () => {
-  let cursor = document.querySelector(".cursor");
-  document.addEventListener("mousemove", (e) => {
-    // let clientX = e.clientX;
-    // let clientY = e.clientY;
-    // cursor.style.transform = `translate(${clientX}px, ${clientY}px)`;
-    cursor.style.top = e.pageY + "px";
-    cursor.style.left = e.pageX + "px";
-  });
 
-  let h1 = document.querySelectorAll("h1");
-  h1.forEach((titre) => {
-    titre.addEventListener("mouseover", (e) => {
-      cursor.classList.add("cursor--bigger");
-    });
-    titre.addEventListener("mouseleave", (e) => {
-      cursor.classList.remove("cursor--bigger");
-    });
-  });
-
-  let clouds = document.querySelectorAll(".cloudBig");
-  let mouseTxt = document.querySelector(".cursor-text");
-  clouds.forEach((cloud) => {
-    cloud.addEventListener("mouseover", (e) => {
-      cursor.classList.add("cursor--bigger");
-      mouseTxt.innerText = "📌";
-    });
-    cloud.addEventListener("mouseleave", (e) => {
-      cursor.classList.remove("cursor--bigger");
-      mouseTxt.innerText = "";
-    });
-  });
-  let cloudHome = document.querySelector(".cloudBigHome");
-  let mouseTxtHome = document.querySelector(".cursor-text");
-
-  cloudHome.addEventListener("mouseover", (e) => {
-    cursor.classList.add("cursor--bigger");
-    mouseTxtHome.innerText = "📌";
-  });
-  cloudHome.addEventListener("mouseleave", (e) => {
-    cursor.classList.remove("cursor--bigger");
-    mouseTxtHome.innerText = "";
-  });
-
-  let link = document.querySelectorAll("a");
-  link.forEach((a) => {
-    a.addEventListener("mouseover", (e) => {
-      cursor.classList.add("cursor--big");
-    });
-    a.addEventListener("mouseleave", (e) => {
-      cursor.classList.remove("cursor--big");
-    });
-  });
-
-  let submit = document.querySelector(".submit").firstElementChild;
-
-  submit.addEventListener("mouseover", (e) => {
-    cursor.classList.add("cursor--big");
-  });
-  submit.addEventListener("mouseleave", (e) => {
-    cursor.classList.remove("cursor--big");
-  });
-
-  // let target = e.target;
-  // target.addEventListener("mouseover", (e) => {
-  //   cursor.classList.add("cursor--big");
-  // });
-};
-
-export { cursor };
-</script> -->
 </body>
+
 </html>
