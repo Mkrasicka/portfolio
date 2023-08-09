@@ -10,7 +10,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="">
   <meta property="og:image" content=""/>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <script src="https://kit.fontawesome.com/dbc9ab255d.js" crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/2a23fa00c4.js" crossorigin="anonymous"></script>
@@ -24,63 +24,89 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,200;0,500;0,600;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-
+  <div class="wrapper">
+    <div class="background-text">HELLO</div>
+  <!-- <span class="cursor">
+    <span class="cursor-text"></span>
+  </span> -->
   <header>
-    <div class="container text-center welcome ">
-      <div class="row">
-        <div class="col-lg-10 mx-auto">
-          <span class="cursor" style="top: 94px; left: 708px;">
-            <span class="cursor-text"></span>
-          </span>
-          <!-- <p>HI!</p> -->
-          <h1>Magdalena Krasicka</h1>
-          <h2>Full Stack Developer</h2>
-          <a class="at scale" href="#about">ABOUT</a>
-          <a class="pr scale" href="#projects">PROJECTS</a>
-          <a class="sks scale" href="#skills">SKILLS</a>
-          <!-- <a class="cn ">CONNECT</a> -->
-          <!-- <h3>I love building apps and designing websites. I'm learning creative coding and experimenting with Meta Spark.</h2> -->
-          </div>
-
-        </div>
-
+    <img class="sun" src="images/sun1.jpeg " alt="">
+    <div class="welcome col-lg-12 mx-auto">
+        <!-- col-lg-12 mx-auto -->
+      <h1 class="slide-down">Magdalena Krasicka</h1>
+      <h2>Full Stack Developer</h2>
+      <div class="topics">
+        <a class="at scale topic topic1" href="#about">ABOUT</a>
+        <a class="pr scale topic topic2" href="#projects">PROJECTS</a>
+        <a class="sks scale topic topic3" href="#skills">SKILLS</a>
       </div>
-      <div class="scroll-down-about"></div>
+    </div>
+    <div class="hello">
+      <p>Hi!</p>
+    </div>
+
+    <img class="clouds" src="./images/844780-removebg-preview.png" alt="cloud">
+    <img class="clouds2" src="./images/844780-removebg-preview.png" alt="cloud">
+    <!-- <img class="clouds3" src="./images/844780-removebg-preview.png" alt="cloud"> -->
+    <!-- <img class="clouds4" src="./images/844780-removebg-preview.png" alt="cloud"> -->
+
+    <img class="women" src="./images/strong-blond-woman-profile-vector_53876-79993-removebg-preview.png" alt="women">
+    <img class="bubble" src="./images/vecteezy_bubbles-speech_1195232.png" alt="chat bubble">
+    <div class="scroll-down-about">
+    </div>
   </header>
-  <hr class="line">
+
+
+
   <section id="about">
-    <div class="section1 container text-center">
-      <div class="row">
-        <div class="col-lg-10 mx-auto">
-          <img class="img" src="images/ID-picture.jpeg" alt="photo Magdalena Krasicka">
-          <h3 class="aboutme">After graduating with a Masters degree in Business & Management, for the last 8 years, I have enjoyed working in creative industries
-                and customer facing environments; such as telecommunications and beauty. Recently graduated from an extensive Web Developer bootcamp at the Le Wagon
-                where I fell in love with coding.</h3>
-        </div>
+    <h3 class="first">About me</h3>
+    <div class="container col-lg-12 mx-auto">
+      <div class="section1">
+    <!-- col-lg-12 mx-auto -->
+        <img class="img" src="https://avatars.githubusercontent.com/u/107586977?v=4" alt="photo Magdalena Krasicka">
+        <h2 class="aboutme " id="myImg">After graduating with a Masters degree in Business & Management, for the last 8 years, I have enjoyed working in creative industries
+          and customer facing environments; such as telecommunications and beauty. Recently graduated from an extensive Web Developer bootcamp at the Le Wagon
+          where I fell in love with coding.</h2>
       </div>
     </div>
   </section>
 
   <hr class="line">
+
   <section id="projects">
-    <div class="section2 container">
-      <h3 class="web">Web Projects</h3>
-      <div class="row col-lg-10 mx-auto">
+    <h3 class="first">Web Projects</h3>
+    <div class="container col-lg-12 mx-auto">
+      <div class="section2">
+      <!-- col-lg-12 mx-auto -->
+      <div class="">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="images/GG.png" class="d-block w-100" alt="...">
+              <img class="img-carousel" src="images/GG.png" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="images/GG1.png" class="d-block w-100" alt="...">
+              <img class="img-carousel" src="images/GG1.png" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="images/GG3.png" class="d-block w-100" alt="...">
+              <img class="img-carousel" src="images/GG3.png" class="d-block w-100" alt="...">
             </div>
-          </div>
+            <div class="carousel-item">
+              <img class="img-carousel" src="images/GG4.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img class="img-carousel" src="images/GG5.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img class="img-carousel" src="images/GG6.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img class="img-carousel" src="images/GG7.png" class="d-block w-100" alt="...">
+            </div>
+                    </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
@@ -99,17 +125,18 @@
           People can use GimmeGolf to play golf, organize games, socialize, keep fit and have fun.</p>
         <hr class="line">
         </div>
-        <div class="row col-lg-10 mx-auto">
+        <!-- col-lg-12 mx-auto -->
+        <div class="">
         <div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="images/SS1.png" class="d-block w-100" alt="...">
+              <img class="img-carousel" src="images/SS1.png" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="images/SS2.png" class="d-block w-100" alt="...">
+              <img class="img-carousel" src="images/SS2.png" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="images/SS3.png" class="d-block w-100" alt="...">
+              <img class="img-carousel" src="images/SS3.png" class="d-block w-100" alt="...">
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
@@ -130,50 +157,59 @@
       </div>
     </div>
   </section>
+
   <hr class="line">
-  <section class="section3 container" id="skills">
-    <div class="row col-lg-10 mx-auto">
-      <h2 class="skills">My Skills</h2>
-      <div class="d-flex section3s">
-        <hr class="line">
-        <div class="d-grid skill">
-          <h2>HTML5</h2>
-          <h2>CSS</h2>
-          <h2>Vanilla JavaScript</h2>
-          <h2>Ruby</h2>
-          <h2>Ruby on Rails</h2>
-          <h2>UI/UX</h2>
-          <h2>Bootstrap</h2>
-          <h2>Agile software development</h2>
+
+  <section id="skills col-lg-12 mx-auto">
+    <h3 class="first">My Skills</h3>
+    <!-- col-lg-12 mx-auto -->
+    <div class="container">
+      <div class="section3s">
+        <div class="row">
+          <p>HTML5</p>
+          <p>CSS</p>
+          <p>Vanilla JavaScript</p>
+          <p>Ruby</p>
+          <p>Ruby on Rails</p>
+          <p>UI/UX</p>
+          <p>Bootstrap</p>
+          <p>Agile software development</p>
         </div>
-        <div class="d-grid">
-          <h2>APIs</h2>
-          <h2>Heroku</h2>
-          <h2>Figma</h2>
-          <h2>Cloudinary</h2>
-          <h2>TDD</h2>
-          <h2>PostegreSQL</h2>
-          <h2>Pair Programming</h2>
-          <h2>Project management</h2>
+        <div class="row">
+          <p>APIs</p>
+          <p>Heroku</p>
+          <p>Figma</p>
+          <p>Cloudinary</p>
+          <p>TDD</p>
+          <p>PostegreSQL</p>
+          <p>Pair Programming</p>
+          <p>Project management</p>
         </div>
       </div>
-      <div class="d-flex align-content-center">
-        <a download="" class="cv scale" href="images/Magdalena_Krasicka_Resume_.pdf">Download my CV</a>
+      <div class="cv">
+        <a download="" class="scale" href="images/Magdalena_Krasicka_Resume_.pdf">Download my CV</a>
       </div>
     </div>
   </section>
+
   <hr class="line">
-  <section class="section4 container">
-    <div class="row col-lg-10 mx-auto">
-      <div class="d-grid">
-        <h2 class="ona">I'm also a passionate colorist. You can view my instagram profile by clicking <a href="https://www.instagram.com/magdalenakrasickahair/">here.</a></h2>
-        <div class="d-flex my-5">
-          <img src="images/274259425_148111767619215_5926298790843313225_n.jpg" class="she">
-          <img src="images/272284883_609209507047825_1406869949398264589_n.jpg" class="she">
-          <img src="images/251604303_206272131643440_8580048522906516562_n.jpg" class="she">
-          <img src="images/251259578_1542238316126166_7500411807262724110_n.jpg" class="she">
-        </div>
+
+  <section class=" col-lg-10 mx-auto">
+    <h2 class="second">I'm also a passionate colorist. You can view my instagram profile by clicking <a class="here" href="https://www.instagram.com/magdalenakrasickahair/"> here.</a></h2>
+    <!-- col-lg-12 mx-auto -->
+    <div class="container">
+    <div class="section4">
+      <div class="d-flex justify-content-center imghair col-lg-12 col-sm-12">
+        <!-- <div class="imghair2"> -->
+        <img src="images/274259425_148111767619215_5926298790843313225_n.jpg" class="she">
+        <img src="images/272284883_609209507047825_1406869949398264589_n.jpg" class="she">
+        <!-- </div> -->
+        <!-- <div class=" imghair2"> -->
+        <img src="images/251604303_206272131643440_8580048522906516562_n.jpg" class="she">
+        <img src="images/251259578_1542238316126166_7500411807262724110_n.jpg" class="she">
+      <!-- </div> -->
       </div>
+    </div>
     </div>
   </section>
 
@@ -187,9 +223,30 @@
       <h2 class="email scale">© Magdalena Krasicka 2023</h2>
     </div>
   </footer>
+</div>
+<script>
 
+const topics = document.querySelectorAll('.topic');
 
+ function toggleOpen() {
+    this.classList.toggle('open');
+ }
 
+ function toggleRemove() {
+    this.classList.remove('open');
+ }
+ topics.forEach(topic => topic.addEventListener('mouseover', toggleOpen));
+ topics.forEach(topic => topic.addEventListener('mouseout', toggleRemove));
+
+ window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  if (document.documentElement.scrollTop > 350) {
+    document.getElementById("myImg").className = "slideUp";
+  }
+}
+</script>
 
 </body>
+
 </html>
