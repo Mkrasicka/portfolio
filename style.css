@@ -217,7 +217,7 @@ header > * {
 
 section h3 {
   font-size: 60px;
-  font-weight: 300;
+  font-weight: bold;
   color: black;
   padding-bottom: 55px;
   padding-top: 20px;
@@ -293,8 +293,8 @@ section p {
 header h1 {
   margin-top: 20px;
   font-size: 100px;
-  font-weight: 500;
-  color: black;
+  font-weight: bold;
+  /* color: black; */
   text-transform: uppercase;
   padding-top: 20px;
   margin-bottom: 20px;
@@ -306,7 +306,7 @@ header h1 {
 
 header h2 {
   font-size: 50px;
-  font-weight: 300;
+  font-weight: bold;
   font-style: italic;
   color: black;
   padding-bottom: 55px;

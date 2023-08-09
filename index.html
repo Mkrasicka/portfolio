@@ -187,7 +187,7 @@
         </div>
       </div>
       <div class="cv">
-        <a download="" class="scale" href="images/Magdalena_Krasicka_Resume_.pdf">Download my CV</a>
+        <a download="" class="scale" href="images/Magdalena_Krasicka_Resume_Technology.pdf">Download my CV</a>
       </div>
     </div>
   </section>
@@ -245,6 +245,15 @@ function myFunction() {
     document.getElementById("myImg").className = "slideUp";
   }
 }
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const h1 = document.querySelector('h1');
+  document.body.addEventListener('mousemove', function(e) {
+    h1.style.color = `rgb(${e.clientX / 3}, ${e.clientY / 3}, ${e.clientX / e.clientY * 20})`;
+  });
+});
+
 </script>
 
 </body>
